@@ -4,17 +4,19 @@ import java.util.NoSuchElementException;
 
 public class StackList<T> {
 
-  Node<T> top;
+  StackNode<T> top;
 
   public void push(T data) {
-    Node nd = new Node(data);
+    StackNode nd = new StackNode(data);
     nd.next = top;
     top = nd;
   }
 
   public T peek() {
-    if (isEmpty()) throw new NoSuchElementException("Stack Null");
-    return top.data;
+    if (isEmpty()) {
+      throw new NoSuchElementException("Stack Null");
+    }
+    return top.item;
   }
 
   public T pop() {
@@ -23,7 +25,7 @@ public class StackList<T> {
     return item;
   }
 
-  public boolean isEmpty(){
+  public boolean isEmpty() {
     return (top == null);
   }
 }
