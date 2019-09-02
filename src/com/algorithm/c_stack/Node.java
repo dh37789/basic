@@ -1,4 +1,4 @@
-package com.example.c_stack;
+package com.algorithm.c_stack;
 
 public class Node<T> {
   public T data;

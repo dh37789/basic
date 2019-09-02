@@ -1,6 +1,6 @@
-package com.example.a_sort;
+package com.algorithm.a_sort;
 
-public class SelectSort {
+public class BubbleSort {
 
   public static void main(String[] args) {
     int[] arr = {9, 2, 10, 6, 3, 4, 1, 8, 7, 5};
@@ -11,7 +11,7 @@ public class SelectSort {
     }
     System.out.println();
 
-    selectSort(arr);
+    bubbleSort(arr);
 
     System.out.println("After : ");
     for (int i : arr) {
@@ -19,18 +19,17 @@ public class SelectSort {
     }
   }
 
-  private static void selectSort(int[] arr) {
+  private static void bubbleSort(int[] arr) {
     for (int i = 0; i < arr.length; i++) {
-      int tmp = i;
-      int tmp2;
-      for (int j = i; j < arr.length; j++) {
-        if (arr[tmp] > arr[j]) {
-          tmp = j;
+      int tmp;
+      for (int j = 1; j < arr.length - i; j++) {
+        if (arr[j - 1] > arr[j]) {
+          tmp = arr[j - 1];
+          arr[j - 1] = arr[j];
+          arr[j] = tmp;
         }
       }
-      tmp2 = arr[i];
-      arr[i] = arr[tmp];
-      arr[tmp] = tmp2;
     }
   }
+
 }

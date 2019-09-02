@@ -1,6 +1,4 @@
-package com.example.c_stack;
-
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
+package com.algorithm.c_stack;
 
 public class StackArr {
 

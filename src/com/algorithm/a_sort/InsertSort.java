@@ -1,4 +1,4 @@
-package com.example.a_sort;
+package com.algorithm.a_sort;
 
 public class InsertSort {
 

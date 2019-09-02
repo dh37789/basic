@@ -1,4 +1,4 @@
-package com.example.b_search;
+package com.algorithm.b_search;
 
 import java.util.ArrayList;
 import java.util.List;

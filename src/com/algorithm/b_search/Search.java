@@ -1,4 +1,4 @@
-package com.example.b_search;
+package com.algorithm.b_search;
 
 public class Search {
 

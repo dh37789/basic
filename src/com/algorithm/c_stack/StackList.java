@@ -1,4 +1,4 @@
-package com.example.c_stack;
+package com.algorithm.c_stack;
 
 import java.util.NoSuchElementException;
 
