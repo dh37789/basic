@@ -6,37 +6,32 @@ import java.util.List;
 public class Solution {
 
   public static void main(String[] args) {
-    int[][] v = {{1, 1}, {2, 2}, {1, 2}};
+    String s = "3people unFollowed me";
+//    String s = "for the last week";
+//    char s = ' ';
 
-    int[] answer = {};
-
-    List<Integer> list = new ArrayList();
-    List<Integer> list2 = new ArrayList();
-
-    for (int i = 0; i < v.length; i++){
-      for (int j = 0; j < v[i].length; j++){
-         list.add(v[i][j]);
-      }
-    }
-
-    for (int b : list){
-      if (!list2.contains(b)){
-        list2.add(b);
-      }else{
-        list2.remove((Object)b);
-      }
-    }
-
-    answer = new int[]{list2.get(0), list2.get(1)};
-
+    System.out.println(solution(s));
+//    System.out.println((int)s);
   }
-  public int[] solution(int[][] v) {
-//
-//    for ()
+  public static String solution(String s) {
+    char[] arr;
+    arr = s.toCharArray();
 
-    int[] answer = {};
-
-
-    return answer;
+    for (int i = 1; i < arr.length; i++) {
+      char a = arr[i-1];
+      char b = arr[i];
+      if (i-1 == 0 && ('a' <= a&&a <= 'z')) {
+        a -= 32;
+        arr[i-1] = a;
+      }
+      if ((int)a == 32 && ('a' <= b&&b <= 'z')) {
+        b -= 32;
+        arr[i] = b;
+      } else if ((int)a != 32 && ('A' <= b&&b <= 'Z')) {
+        b += 32;
+        arr[i] = b;
+      }
+    }
+    return new String(arr, 0, arr.length);
   }
 }
