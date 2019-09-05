@@ -2,7 +2,11 @@ package com.programmers.level02;
 
 import java.util.Arrays;
 
-public class No001_Max_And_Min_Values {
+/**
+ * 최대값과 최소값
+ * link : https://programmers.co.kr/learn/courses/30/lessons/12939
+ */
+public class No01_Max_And_Min_Values {
 
   public static void main(String[] args) {
     String s = "-1 -2 -3 -4";

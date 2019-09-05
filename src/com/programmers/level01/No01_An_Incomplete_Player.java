@@ -7,7 +7,7 @@ import java.util.Map;
  * 완주하지 못한 선수
  * link : https://programmers.co.kr/learn/courses/30/lessons/42576
  */
-public class No001_An_Incomplete_Player {
+public class No01_An_Incomplete_Player {
 
   public static void main(String[] args) {
     String[] arr = {"mislav", "stanko", "mislav", "ana"};

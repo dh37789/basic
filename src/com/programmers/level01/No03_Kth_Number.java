@@ -2,7 +2,11 @@ package com.programmers.level01;
 
 import java.util.Arrays;
 
-public class No003_Kth_Number {
+/**
+ * K번째 수
+ * link : https://programmers.co.kr/learn/courses/30/lessons/42748
+ */
+public class No03_Kth_Number {
 
   public static void main(String[] args) {
     int[] array = {1, 5, 2, 6, 3, 7, 4};
