@@ -1,18 +1,25 @@
 package com.algorithm.b_search;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Solution {
 
   public static void main(String[] args) {
-   String[] seoul = {"Jane", "Kim"};
+   String s = "Zbcdefg";
 
-    System.out.println(solution(seoul));
+    System.out.println(solution(s));
   }
-  public static String solution(String[] seoul) {
-    return "김서방은 " + Arrays.asList(seoul).indexOf("Kim") + "에 있다";
+  public static String solution(String s) {
+    char[] chars = s.toCharArray();
+    for (int i = 0; i < chars.length; i++) {
+      char ch = ' ';
+      for (int j = 1; j < chars.length - i; j++) {
+        if (chars[j-1] < chars[j]) {
+          ch = chars[j-1];
+          chars[j-1] = chars[j];
+          chars[j] = ch;
+        }
+      }
+    }
+    return String.valueOf(chars);
   }
 }
 
