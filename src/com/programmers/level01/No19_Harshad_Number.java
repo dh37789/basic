@@ -1,6 +1,10 @@
-package com.algorithm.b_search;
+package com.programmers.level01;
 
-public class Solution {
+/**
+ * 하샤드 수
+ * link : https://programmers.co.kr/learn/courses/30/lessons/12947
+ */
+public class No19_Harshad_Number {
 
   public static void main(String[] args) {
     int x = 10;
@@ -14,8 +18,6 @@ public class Solution {
     for (int i = 0; i < num.length(); i++) {
       tmp += Integer.parseInt(num.charAt(i) + "");
     }
-    return x%tmp == 0;
+    return x % tmp == 0;
   }
 }
-
-
