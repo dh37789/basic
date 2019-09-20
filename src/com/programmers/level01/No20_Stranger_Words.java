@@ -1,6 +1,10 @@
-package com.algorithm.b_search;
+package com.programmers.level01;
 
-public class Solution {
+/**
+ * 이상한 문자 만들기
+ * link : https://programmers.co.kr/learn/courses/30/lessons/12930
+ */
+public class No20_Stranger_Words {
 
   public static void main(String[] args) {
     String s = "try hello world";
@@ -26,10 +30,10 @@ public class Solution {
     String answer = "";
     for (int i = 0; i < strings.length; i++) {
       answer += strings[i];
-      if (i != strings.length-1) answer += " ";
+      if (i != strings.length - 1) {
+        answer += " ";
+      }
     }
     return answer;
   }
 }
-
-
