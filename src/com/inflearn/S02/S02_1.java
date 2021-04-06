@@ -1,4 +1,4 @@
-package com.inflearn;
+package com.inflearn.S02;
 
 import java.util.ArrayList;
 import java.util.List;
