@@ -1,6 +1,7 @@
 package com.inflearn.S03;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class S03_05 {
     public static void main(String[] args) {
