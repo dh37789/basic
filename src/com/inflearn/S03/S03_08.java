@@ -64,6 +64,31 @@ public class S03_08 {
         return arr;
     }
 
+    private static int[][] suffle_deque(int[][] arr, String str) {
+        int line = Integer.parseInt(str.split(" ")[0]) - 1;
+        int dir = Integer.parseInt(str.split(" ")[1]);
+        int num = Integer.parseInt(str.split(" ")[2]);
+
+        Deque<Integer> deque = new ArrayDeque<>();
+
+        for (int i = 0; i < arr[line].length; i++){
+            deque.add(arr[line][i]);
+        }
+
+        for (int i = 0; i < num; i++){
+            if (dir == 0){
+                deque.addLast(deque.pollFirst());
+            } else if (dir == 1){
+                deque.addFirst(deque.pollLast());
+            }
+        }
+
+        for (int i = 0; i < arr[line].length; i++){
+            arr[line][i] = deque.pollFirst();
+        }
+        return arr;
+    }
+
     private static int solution(int[][] arr) {
         int stand = arr.length/2;
         int sum = 0;
