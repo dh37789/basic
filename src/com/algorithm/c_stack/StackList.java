@@ -1,8 +1,12 @@
 package com.algorithm.c_stack;
 
 import java.util.NoSuchElementException;
+import java.util.Queue;
+
 
 public class StackList<T> {
+
+  Queue queue;
 
   StackNode<T> top;
 
