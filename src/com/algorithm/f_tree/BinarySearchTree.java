@@ -1,8 +1,5 @@
 package com.algorithm.f_tree;
 
-
-import java.time.temporal.Temporal;
-
 public class BinarySearchTree<T extends Comparable<T>> {
     private TreeNode<T> rootNode = null;
 
@@ -18,37 +15,41 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
+    /**
+     * 트리에서 item을 삽입한다.
+     */
     public boolean insertNode(T item) {
 
         if (isEmpty()){
             rootNode = new TreeNode(item);
             return true;
         } else {
-            TreeNode<T> head = rootNode;
-            TreeNode<T> node;
+            TreeNode<T> node = rootNode;
 
+            /** data 및 좌, 우를 비교하여 자식노드가 비어있는 곳을 찾아 넣어준다. */
             while (true) {
-                node = head;
-
-                if (head.data.compareTo(item) > 0) {
-                    if(head.left == null) {
-                        head.left = new TreeNode(item);
+                if (node.data.compareTo(item) > 0) {
+                    if(node.left == null) {
+                        node.left = new TreeNode(item);
                         return true;
                     }
-                    head = head.left;
-                } else if (head.data.compareTo(item) < 0) {
-                    if(head.right == null) {
-                        head.right = new TreeNode(item);
+                    node = node.left;
+                } else if (node.data.compareTo(item) < 0) {
+                    if(node.right == null) {
+                        node.right = new TreeNode(item);
                         return true;
                     }
-                    head = head.right;
-                } else if (head.data.compareTo(item) == 0) {
+                    node = node.right;
+                } else if (node.data.compareTo(item) == 0) {
                     return false;
                 }
             }
         }
     }
 
+    /**
+     * 트리에서 item을 삭제한다.
+     */
     public boolean removeNode(T item) {
         if (isEmpty()){
             return false;
@@ -123,6 +124,9 @@ public class BinarySearchTree<T extends Comparable<T>> {
         return true;
     }
 
+    /**
+     * 트리에서 item을 조회한다.
+     */
     public boolean search(T item) {
         TreeNode<T> node = rootNode;
         while (true) {
@@ -142,8 +146,10 @@ public class BinarySearchTree<T extends Comparable<T>> {
         }
     }
 
+    /**
+     * 트리가 비어있는지 확인한다.
+     */
     public boolean isEmpty(){
         return rootNode == null;
     }
-
 }
