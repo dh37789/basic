@@ -26,14 +26,14 @@ public class No01654 {
 
         Arrays.sort(lanArr, Collections.reverseOrder());
 
-        long result = binary_search(lanArr);
+        long result = binarySearch(lanArr);
 
         bw.write(String.valueOf(result));
         bw.flush();
         bw.close();
     }
 
-    private static long binary_search(Long[] lanArr){
+    private static long binarySearch(Long[] lanArr){
         long max = lanArr[0];
         long min  = 1;
         long middle;

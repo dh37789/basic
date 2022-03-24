@@ -1,7 +1,5 @@
 package com.inflearn.S04;
 
-import org.omg.CORBA.SystemException;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
