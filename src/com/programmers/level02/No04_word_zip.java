@@ -2,15 +2,14 @@ package com.programmers.level02;
 
 public class No04_word_zip {
     public static void main(String[] args) {
-        String s = "xababcdcdababcdcd";
+        String s = "aabbaccc";
         System.out.println(solution(s));
     }
 
     private static int solution(String s) {
-        int half = s.length()/2;
         int len = 1;
         String minStr = s;
-        while(len <= half) {
+        while(len <= s.length()/2) {
             StringBuilder builder = new StringBuilder();
             String strSplit = s.substring(0, len);
 
@@ -20,24 +19,15 @@ public class No04_word_zip {
                 if(strSplit.equals(strCompress)) {
                     compression++;
                 } else {
-                    if (compression != 1){
-                        builder.append(compression + strSplit);
-                        compression = 1;
-                    } else {
-                        builder.append(strSplit);
-                    }
+                    builder.append(compression == 1 ? strSplit : compression + strSplit);
                     strSplit = strCompress;
+                    compression = 1;
                 }
             }
-            if (compression != 1){
-                builder.append(compression + strSplit);
-            } else {
-                builder.append(strSplit);
-            }
+            builder.append(compression == 1 ? strSplit : compression + strSplit);
             if (minStr.length() > builder.toString().length()){
                 minStr = builder.toString();
             }
-
             len++;
         }
 
