@@ -8,7 +8,7 @@ public class No04_word_zip {
 
     private static int solution(String s) {
         int len = 1;
-        String minStr = s;
+        int result = s.length();
         while(len <= s.length()/2) {
             StringBuilder builder = new StringBuilder();
             String strSplit = s.substring(0, len);
@@ -25,12 +25,10 @@ public class No04_word_zip {
                 }
             }
             builder.append(compression == 1 ? strSplit : compression + strSplit);
-            if (minStr.length() > builder.toString().length()){
-                minStr = builder.toString();
-            }
+            result = Math.min(result, builder.toString().length());
             len++;
         }
 
-        return minStr.length();
+        return result;
     }
 }
