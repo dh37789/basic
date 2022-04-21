@@ -39,7 +39,7 @@ public class No02667 {
         list.forEach(System.out::println);
     }
 
-    public static void bfs (int y, int x) {
+    private static void bfs (int y, int x) {
         Queue<Node> queue = new LinkedList<>();
         queue.offer(new Node(y, x));
         count = 1;

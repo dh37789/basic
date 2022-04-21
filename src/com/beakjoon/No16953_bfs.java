@@ -18,7 +18,7 @@ public class No16953_bfs {
         System.out.println(bfs(a, b));
     }
 
-    public static int bfs(int a, int b) {
+    private static int bfs(int a, int b) {
         Queue<Node> queue = new LinkedList<>();
         queue.add(new Node(a, 0));
 
