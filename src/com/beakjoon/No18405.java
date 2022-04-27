@@ -1,37 +1,32 @@
 package com.beakjoon;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
-import java.util.stream.Stream;
 
 public class No18405 {
+    int n, k;
     static int[][] examiner;
     static boolean[][] visited;
     static int[] dirX = {0, 0, -1, 1};
     static int[] dirY = {-1, 1, 0, 0};
 
-    public static void main(String[] args) throws IOException {
+    public void solution() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
         StringTokenizer sToken = new StringTokenizer(br.readLine());
-        int n = Integer.parseInt(sToken.nextToken());
-        int k = Integer.parseInt(sToken.nextToken());
+        n = Integer.parseInt(sToken.nextToken());
+        k = Integer.parseInt(sToken.nextToken());
 
         examiner = new int[n][n];
 
-        for (int i = 0; i < n ; i++) {
+        for (int i = 0; i < n; i++) {
             sToken = new StringTokenizer(br.readLine(), " ");
-            for (int j = 0; j < n ; j++) {
+            for (int j = 0; j < n; j++) {
                 examiner[i][j] = Integer.parseInt(sToken.nextToken());
             }
-        }
-
-        for (int i = 0; i < n; i++) {
-            examiner[i] = Stream.of(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
         }
 
         sToken = new StringTokenizer(br.readLine());
@@ -41,40 +36,53 @@ public class No18405 {
         int y = Integer.parseInt(sToken.nextToken());
 
         visited = new boolean[n][n];
-        for (int virus = 1; virus <= k; virus++) {
-            bfs(virus);
+
+        loop:
+        while(s-- > 0) {
+            for (int virus = 1; virus <= k; virus++) {
+                infection(virus);
+                if (examiner[x-1][y-1] != 0) break loop;
+            }
         }
 
-        System.out.println(examiner[x-1][y-1]);
+        bw.write(String.valueOf(examiner[x-1][y-1]));
+        bw.flush();
+        bw.close();
+        br.close();
     }
 
-    private static void bfs(int virus) {
+    public void infection(int virus) {
         Queue<Node> queue = new LinkedList<>();
-        queue.add(new Node(0, 0));
-        visited[0][0] = true;
+        for (int i = 0; i < n; i++ ) {
+            for (int j = 0; j < n; j++) {
+                if (examiner[i][j] == virus) queue.offer(new Node(i, j));
+            }
+        }
 
         while (!queue.isEmpty()) {
             Node node = queue.poll();
-
-            for (int i = 0; i < 4; i++) {
-                int nx = node.x + dirX[i];
+            for (int i = 0; i < 4; i++){
                 int ny = node.y + dirY[i];
-                if (nx < 0 || ny < 0 || nx >= examiner.length || ny >= examiner.length || examiner[nx][ny] != 0 || visited[nx][ny])
+                int nx = node.x + dirX[i];
+                if (nx < 0 || ny < 0  || nx >= examiner.length || ny >= examiner.length || examiner[ny][nx] != 0 || visited[ny][nx])
                     continue;
-                queue.offer(new Node(nx, ny));
-                visited[nx][ny] = true;
-                examiner[nx][ny] = virus;
+                visited[ny][nx] = true;
+                examiner[ny][nx] = virus;
             }
         }
     }
 
-    static class Node {
-        int x;
-        int y;
+    public static void main(String[] args) throws IOException {
+        new No18405().solution();
+    }
 
-        public Node(int x, int y) {
-            this.x = x;
+    static class Node {
+        int y;
+        int x;
+
+        public Node(int y, int x) {
             this.y = y;
+            this.x = x;
         }
     }
 }
