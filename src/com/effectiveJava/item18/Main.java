@@ -5,6 +5,7 @@ import com.effectiveJava.item18.compositionSet.InstrumentedSet;
 import com.effectiveJava.item18.inheritance.Dog;
 import com.effectiveJava.item18.inheritanceSet.InstrumentedHashSet;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
@@ -25,7 +26,7 @@ public class Main {
         System.out.println("set size : " + set.getAddCount());
 
         /* Set의 컴포지션 */
-        Set<String> set2 = new InstrumentedSet<>(new TreeSet<>(List.of("apple", "banana", "cat")));
+        Set<String> set2 = new InstrumentedSet<>(new HashSet(List.of("apple", "banana", "cat")));
         System.out.println("set size : " + set2.size());
     }
 }
