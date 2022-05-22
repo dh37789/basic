@@ -1,4 +1,4 @@
-package com.effectiveJava.item18;
+package com.effectiveJava.item18.inheritance;
 
 /**
  * 자식 상속객체

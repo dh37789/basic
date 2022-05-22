@@ -1,4 +1,4 @@
-package com.effectiveJava.item18;
+package com.effectiveJava.item18.composition;
 
 /**
  * 부모 컴포지션 객체
