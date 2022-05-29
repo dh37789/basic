@@ -1,0 +1,16 @@
+package src.com.design.pattern.No03FactoryMethod.concreteproduct;
+
+import src.com.design.pattern.No03FactoryMethod.product.AnimalRobot;
+
+/**
+ * ConcreteProduct(MyDocument)
+ * Product 클래스에 정의된 인터페이스를 실제로 구현합니다.
+ */
+public class MetalDogRobot extends AnimalRobot {
+
+    public MetalDogRobot() {
+        type = "Metal Dog Robot";
+        texture = "metal";
+        cry = "bow-wow";
+    }
+}
