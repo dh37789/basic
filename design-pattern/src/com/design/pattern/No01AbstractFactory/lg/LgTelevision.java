@@ -1,6 +1,6 @@
-package src.com.design.pattern.No01AbstractFactory.lg;
+package com.design.pattern.No01AbstractFactory.lg;
 
-import src.com.design.pattern.No01AbstractFactory.abstractFactory.Television;
+import com.design.pattern.No01AbstractFactory.abstractFactory.Television;
 
 /**
  * ProductB1

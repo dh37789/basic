@@ -1,6 +1,6 @@
-package src.com.design.pattern.No02Builder.builder;
+package com.design.pattern.No02Builder.builder;
 
-import src.com.design.pattern.No02Builder.product.Hamburger;
+import com.design.pattern.No02Builder.product.Hamburger;
 
 /**
  * Builder

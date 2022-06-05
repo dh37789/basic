@@ -1,8 +1,8 @@
-package src.com.design.pattern.No01AbstractFactory.lg;
+package com.design.pattern.No01AbstractFactory.lg;
 
-import src.com.design.pattern.No01AbstractFactory.abstractFactory.AbstractFactory;
-import src.com.design.pattern.No01AbstractFactory.abstractFactory.Notebook;
-import src.com.design.pattern.No01AbstractFactory.abstractFactory.Television;
+import com.design.pattern.No01AbstractFactory.abstractFactory.AbstractFactory;
+import com.design.pattern.No01AbstractFactory.abstractFactory.Notebook;
+import com.design.pattern.No01AbstractFactory.abstractFactory.Television;
 
 /**
  * ConcreteFactory1

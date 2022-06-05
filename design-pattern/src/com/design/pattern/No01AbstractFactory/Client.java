@@ -1,10 +1,10 @@
-package src.com.design.pattern.No01AbstractFactory;
+package com.design.pattern.No01AbstractFactory;
 
-import src.com.design.pattern.No01AbstractFactory.abstractFactory.AbstractFactory;
-import src.com.design.pattern.No01AbstractFactory.abstractFactory.Notebook;
-import src.com.design.pattern.No01AbstractFactory.abstractFactory.Television;
-import src.com.design.pattern.No01AbstractFactory.lg.LgFactory;
-import src.com.design.pattern.No01AbstractFactory.samsung.SamsungFactory;
+import com.design.pattern.No01AbstractFactory.abstractFactory.AbstractFactory;
+import com.design.pattern.No01AbstractFactory.abstractFactory.Notebook;
+import com.design.pattern.No01AbstractFactory.abstractFactory.Television;
+import com.design.pattern.No01AbstractFactory.lg.LgFactory;
+import com.design.pattern.No01AbstractFactory.samsung.SamsungFactory;
 
 public class Client {
     public static void main(String[] args) {

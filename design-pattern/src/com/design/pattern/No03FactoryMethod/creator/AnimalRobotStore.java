@@ -1,6 +1,6 @@
-package src.com.design.pattern.No03FactoryMethod.creator;
+package com.design.pattern.No03FactoryMethod.creator;
 
-import src.com.design.pattern.No03FactoryMethod.product.AnimalRobot;
+import com.design.pattern.No03FactoryMethod.product.AnimalRobot;
 
 /**
  * Creator(Application)

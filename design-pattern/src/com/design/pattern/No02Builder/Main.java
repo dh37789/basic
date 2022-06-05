@@ -1,9 +1,9 @@
-package src.com.design.pattern.No02Builder;
+package com.design.pattern.No02Builder;
 
-import src.com.design.pattern.No02Builder.concretebuilder.BurgerKingHamburgerBuilder;
-import src.com.design.pattern.No02Builder.concretebuilder.MomsTouchHamburgerBuilder;
-import src.com.design.pattern.No02Builder.director.HamburgerStore;
-import src.com.design.pattern.No02Builder.product.Hamburger;
+import com.design.pattern.No02Builder.concretebuilder.BurgerKingHamburgerBuilder;
+import com.design.pattern.No02Builder.concretebuilder.MomsTouchHamburgerBuilder;
+import com.design.pattern.No02Builder.director.HamburgerStore;
+import com.design.pattern.No02Builder.product.Hamburger;
 
 public class Main {
     public static void main(String[] args) {

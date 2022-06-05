@@ -1,9 +1,9 @@
 package com.effectiveJava.item18;
 
-import com.effectiveJava.item18.composition.Human;
 import com.effectiveJava.item18.compositionSet.InstrumentedSet;
 import com.effectiveJava.item18.inheritance.Dog;
 import com.effectiveJava.item18.inheritanceSet.InstrumentedHashSet;
+import com.effectiveJava.item18.composition.Human;
 
 import java.util.HashSet;
 import java.util.List;

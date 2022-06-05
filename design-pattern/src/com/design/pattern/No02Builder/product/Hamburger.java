@@ -1,4 +1,4 @@
-package src.com.design.pattern.No02Builder.product;
+package com.design.pattern.No02Builder.product;
 
 /**
  * Product

@@ -1,7 +1,7 @@
-package src.com.design.pattern.No02Builder.concretebuilder;
+package com.design.pattern.No02Builder.concretebuilder;
 
-import src.com.design.pattern.No02Builder.builder.HamburgerBuilder;
-import src.com.design.pattern.No02Builder.product.Hamburger;
+import com.design.pattern.No02Builder.builder.HamburgerBuilder;
+import com.design.pattern.No02Builder.product.Hamburger;
 
 /**
  * ConcreteBuilder2

@@ -1,6 +1,6 @@
-package src.com.design.pattern.No03FactoryMethod.concreteproduct;
+package com.design.pattern.No03FactoryMethod.concreteproduct;
 
-import src.com.design.pattern.No03FactoryMethod.product.AnimalRobot;
+import com.design.pattern.No03FactoryMethod.product.AnimalRobot;
 
 /**
  * ConcreteProduct(MyDocument)

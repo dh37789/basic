@@ -1,4 +1,4 @@
-package src.com.design.pattern.No01AbstractFactory.abstractFactory;
+package com.design.pattern.No01AbstractFactory.abstractFactory;
 
 /**
  * AbstractProductB

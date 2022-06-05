@@ -1,4 +1,4 @@
-/*
+package com.beakjoon;/*
 package com.beakjoon;
 
 import java.io.*;

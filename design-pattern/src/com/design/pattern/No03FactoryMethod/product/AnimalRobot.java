@@ -1,4 +1,4 @@
-package src.com.design.pattern.No03FactoryMethod.product;
+package com.design.pattern.No03FactoryMethod.product;
 
 /**
  * Product(Document)

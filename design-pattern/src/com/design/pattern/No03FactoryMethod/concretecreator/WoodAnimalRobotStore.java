@@ -1,9 +1,9 @@
-package src.com.design.pattern.No03FactoryMethod.concretecreator;
+package com.design.pattern.No03FactoryMethod.concretecreator;
 
-import src.com.design.pattern.No03FactoryMethod.concreteproduct.WoodCatRobot;
-import src.com.design.pattern.No03FactoryMethod.concreteproduct.WoodDogRobot;
-import src.com.design.pattern.No03FactoryMethod.creator.AnimalRobotStore;
-import src.com.design.pattern.No03FactoryMethod.product.AnimalRobot;
+import com.design.pattern.No03FactoryMethod.concreteproduct.WoodCatRobot;
+import com.design.pattern.No03FactoryMethod.concreteproduct.WoodDogRobot;
+import com.design.pattern.No03FactoryMethod.creator.AnimalRobotStore;
+import com.design.pattern.No03FactoryMethod.product.AnimalRobot;
 
 /**
  * ConcreteCreator(MyApplication)

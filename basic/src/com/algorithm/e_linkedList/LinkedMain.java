@@ -1,7 +1,5 @@
 package com.algorithm.e_linkedList;
 
-import java.util.List;
-
 public class LinkedMain {
     public static void main(String[] args) {
         LinkedList list = new LinkedList();

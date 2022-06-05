@@ -1,6 +1,6 @@
-package src.com.design.pattern.No01AbstractFactory.samsung;
+package com.design.pattern.No01AbstractFactory.samsung;
 
-import src.com.design.pattern.No01AbstractFactory.abstractFactory.Television;
+import com.design.pattern.No01AbstractFactory.abstractFactory.Television;
 
 /**
  * ProductB2
