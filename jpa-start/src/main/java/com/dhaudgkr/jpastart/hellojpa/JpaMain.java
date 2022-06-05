@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.List;
 
 /**
  * 해당 작업중 트랜잭션처리나 팩토리를 통해 정보를 가져오는 것은
@@ -26,10 +27,39 @@ public class JpaMain {
         /* JPA의 모든 데이터 변경은 트랜잭션 안에서 실행한다. */
         EntityTransaction entityTransaction = entityManager.getTransaction();
 
-        insertJpa(entityManagerFactory, entityManager, entityTransaction);
-        findJpa(entityManagerFactory, entityManager, entityTransaction);
-        removeJpa(entityManagerFactory, entityManager, entityTransaction);
-        updateJpa(entityManagerFactory, entityManager, entityTransaction);
+//        insertJpa(entityManagerFactory, entityManager, entityTransaction);
+//        findJpa(entityManagerFactory, entityManager, entityTransaction);
+//        removeJpa(entityManagerFactory, entityManager, entityTransaction);
+//        updateJpa(entityManagerFactory, entityManager, entityTransaction);
+        
+        /* JPQL 사용 */
+        /* JQPL이란 SQL을 추상화한 객체 지향 쿼리 언어 */
+        findByJpql(entityManagerFactory, entityManager, entityTransaction);
+    }
+
+    private static void findByJpql(EntityManagerFactory entityManagerFactory, EntityManager entityManager, EntityTransaction entityTransaction) {
+        /* search */
+        entityTransaction.begin();
+
+        try {
+            /* 대상이 테이블이 아닌 객체를 조회 */
+            List<Member> result = entityManager.createQuery("select m from Member as m", Member.class)
+                    /* pageNation 옵션 */
+                    .setFirstResult(1)
+                    .setMaxResults(10)
+                    .getResultList();
+
+            for (Member member : result) {
+                log.debug("member.name = " + member.getName());
+            }
+
+            entityTransaction.commit();
+        } catch (Exception e) {
+            entityTransaction.rollback();
+        } finally {
+            entityManager.close();
+        }
+        entityManagerFactory.close();
     }
 
     private static void updateJpa(EntityManagerFactory entityManagerFactory, EntityManager entityManager, EntityTransaction entityTransaction) {
