@@ -13,7 +13,7 @@ import java.util.List;
  * 해당 작업중 트랜잭션처리나 팩토리를 통해 정보를 가져오는 것은
  * 스프링 부트를 사용할 경우 알아서 처리해준다.
  */
-@Slf4j
+//@Slf4j
 public class JpaMain {
 
     public static void main(String[] args) {
@@ -27,14 +27,14 @@ public class JpaMain {
         /* JPA의 모든 데이터 변경은 트랜잭션 안에서 실행한다. */
         EntityTransaction entityTransaction = entityManager.getTransaction();
 
-//        insertJpa(entityManagerFactory, entityManager, entityTransaction);
+        insertJpa(entityManagerFactory, entityManager, entityTransaction);
 //        findJpa(entityManagerFactory, entityManager, entityTransaction);
 //        removeJpa(entityManagerFactory, entityManager, entityTransaction);
 //        updateJpa(entityManagerFactory, entityManager, entityTransaction);
         
         /* JPQL 사용 */
         /* JQPL이란 SQL을 추상화한 객체 지향 쿼리 언어 */
-        findByJpql(entityManagerFactory, entityManager, entityTransaction);
+//        findByJpql(entityManagerFactory, entityManager, entityTransaction);
     }
 
     private static void findByJpql(EntityManagerFactory entityManagerFactory, EntityManager entityManager, EntityTransaction entityTransaction) {
@@ -50,7 +50,7 @@ public class JpaMain {
                     .getResultList();
 
             for (Member member : result) {
-                log.debug("member.name = " + member.getName());
+//                log.debug("member.name = " + member.getName());
             }
 
             entityTransaction.commit();
@@ -69,7 +69,7 @@ public class JpaMain {
         try {
             Member findMember = entityManager.find(Member.class, 1L);
             /* Entity의 변경을 확인하고 JPA가 자체적으로 update 쿼리를 만들어서 날린다. */
-            findMember.setName("HelloJPA");
+            findMember.setName("Hello JPA WORLD");
 
             entityTransaction.commit();
         } catch (Exception e) {
@@ -103,8 +103,8 @@ public class JpaMain {
 
         try {
             Member findMember = entityManager.find(Member.class, 1L);
-            log.debug("findMember.id = " + findMember.getId());
-            log.debug("findMember.name = " + findMember.getName());
+//            log.debug("findMember.id = " + findMember.getId());
+//            log.debug("findMember.name = " + findMember.getName());
 
             entityTransaction.commit();
         } catch (Exception e) {
@@ -133,10 +133,14 @@ public class JpaMain {
         /* goodcase */
         try {
             Member member = new Member();
-            member.setId(2L);
-            member.setName("HelloB");
+            member.setId(101L);
+            member.setName("Hello JPA");
 
+            System.out.println("=== PERSISTENT BEFORE ===");
             entityManager.persist(member);
+            /* 영속성 컨텍스트의 member의 영속상태를 준영속 상태로 분리한다.*/
+//            entityManager.detach(member);
+            System.out.println("=== PERSISTENT AFTER ===");
             entityTransaction.commit();
         } catch (Exception e) {
             entityTransaction.rollback();
