@@ -17,9 +17,31 @@ public class JpaPersistent {
 
 //        persist(entityManager, entityTransaction);
 //        readLazy(entityManager, entityTransaction);
-        saveLazy(entityManager, entityTransaction);
+//        saveLazy(entityManager, entityTransaction);
+        flush(entityManager, entityTransaction);
 
         entityManagerFactory.close();
+    }
+
+    private static void flush(EntityManager entityManager, EntityTransaction entityTransaction) {
+        entityTransaction.begin();
+        try {
+            log.debug("member persist - BEFORE");
+            Member member = new Member(105L, "member200");
+            entityManager.persist(member);
+            log.debug("member persist - AFTER");
+
+            log.debug("member flush - BEFORE");
+            /* 쿼리 생성 */
+            entityManager.flush();
+            log.debug("member flush - AFTER");
+
+            entityTransaction.commit();
+        } catch (Exception e) {
+            entityTransaction.rollback();
+        } finally {
+            entityManager.close();
+        }
     }
 
     private static void saveLazy(EntityManager entityManager, EntityTransaction entityTransaction) {
