@@ -13,7 +13,7 @@ import java.util.List;
  * 해당 작업중 트랜잭션처리나 팩토리를 통해 정보를 가져오는 것은
  * 스프링 부트를 사용할 경우 알아서 처리해준다.
  */
-//@Slf4j
+@Slf4j
 public class JpaMain {
 
     public static void main(String[] args) {
@@ -132,9 +132,7 @@ public class JpaMain {
 
         /* goodcase */
         try {
-            Member member = new Member();
-            member.setId(101L);
-            member.setName("Hello JPA");
+            Member member = new Member(101L, "Hello JPA");
 
             System.out.println("=== PERSISTENT BEFORE ===");
             entityManager.persist(member);
