@@ -18,11 +18,47 @@ public class JpaPersistent {
 //        persist(entityManager, entityTransaction);
 //        readLazy(entityManager, entityTransaction);
 //        saveLazy(entityManager, entityTransaction);
-        flush(entityManager, entityTransaction);
-
+//        flush(entityManager, entityTransaction);
+//        detach(entityManager, entityTransaction);
+        clear(entityManager, entityTransaction);
         entityManagerFactory.close();
     }
 
+    private static void clear(EntityManager entityManager, EntityTransaction entityTransaction) {
+        entityTransaction.begin();
+        try {
+            Member findMemberA = entityManager.find(Member.class, 102L);
+            log.debug("clear - BEFORE");
+            entityManager.clear();
+            log.debug("clear - AFTER");
+            Member findMemberB = entityManager.find(Member.class, 102L);
+
+            entityTransaction.commit();
+        } catch (Exception e) {
+            entityTransaction.rollback();
+        } finally {
+            entityManager.close();
+        }
+    }
+
+    private static void detach(EntityManager entityManager, EntityTransaction entityTransaction) {
+        entityTransaction.begin();
+        try {
+            Member findMemberA = entityManager.find(Member.class, 102L);
+            findMemberA.setName("Modify JAVA");
+
+            log.debug("detach - BEFORE");
+//            entityManager.detach(findMemberA);
+            entityManager.detach(findMemberA);
+            log.debug("detach - AFTER");
+
+            entityTransaction.commit();
+        } catch (Exception e) {
+            entityTransaction.rollback();
+        } finally {
+            entityManager.close();
+        }
+    }
     private static void flush(EntityManager entityManager, EntityTransaction entityTransaction) {
         entityTransaction.begin();
         try {
