@@ -43,7 +43,7 @@ public class JpaMain {
 
         try {
             /* 대상이 테이블이 아닌 객체를 조회 */
-            List<Member> result = entityManager.createQuery("select m from Member as m", Member.class)
+            List<Member> result = entityManager.createQuery("select m from User as m", Member.class)
                     /* pageNation 옵션 */
                     .setFirstResult(1)
                     .setMaxResults(10)
