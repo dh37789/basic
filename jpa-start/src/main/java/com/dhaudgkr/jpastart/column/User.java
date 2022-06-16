@@ -13,8 +13,16 @@ import java.util.Date;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Setter
+@SequenceGenerator(name = "user_seq_generator", sequenceName = "user_seq")
+//@TableGenerator(
+//        name = "USER_SEQ_GENERATOR",
+//        table = "MY_SEQUENCES",
+//        pkColumnValue = "USER_SEQ", allocationSize = 1)
 public class User {
     @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_seq_generator")
+//    @GeneratedValue(strategy = GenerationType.TABLE, generator = "USER_SEQ_GENERATOR")
     private Long id;
 
     @Column(name = "name",unique = true)
