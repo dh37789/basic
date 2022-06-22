@@ -1,6 +1,6 @@
-package com.dhaudgkr.jpastart.hellojpa;
+package com.dhaudgkr.jpa01.hellojpa;
 
-import com.dhaudgkr.jpastart.hellojpa.entity.Member;
+import com.dhaudgkr.jpa01.hellojpa.entity.Member;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.persistence.EntityManager;

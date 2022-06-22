@@ -1,4 +1,4 @@
-package com.dhaudgkr.jpastart.column;
+package com.dhaudgkr.jpa01.column;
 
 import lombok.AccessLevel;
 import lombok.Getter;

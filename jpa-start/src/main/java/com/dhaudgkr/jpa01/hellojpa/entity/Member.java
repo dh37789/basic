@@ -1,12 +1,10 @@
-package com.dhaudgkr.jpastart.hellojpa.entity;
+package com.dhaudgkr.jpa01.hellojpa.entity;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 /* JPA가 사용하는 Entity 설정 */
 @Entity

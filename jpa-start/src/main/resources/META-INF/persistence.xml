@@ -3,7 +3,7 @@
              xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
     <persistence-unit name="hello">
-<!--        <class>com.dhaudgkr.jpastart.hellojpa.entity.Member</class>-->
+<!--        <class>com.dhaudgkr.jpa01.hellojpa.entity.Member</class>-->
         <class>com.dhaudgkr.jpashop.domain.Member</class>
         <class>com.dhaudgkr.jpashop.domain.Item</class>
         <class>com.dhaudgkr.jpashop.domain.OrderItem</class>
@@ -25,6 +25,32 @@
             <property name="hibernate.use_sql_comments" value="true"/>
 <!--            <property name="hibernate.hbm2ddl.auto" value="create"/>-->
 <!--            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+        </properties>
+    </persistence-unit>
+
+    <persistence-unit name="hello2">
+        <!--        <class>com.dhaudgkr.jpa01.hellojpa.entity.Member</class>-->
+        <class>com.dhaudgkr.jpa02.domain.Member</class>
+        <class>com.dhaudgkr.jpa02.domain.Team</class>
+        <properties>
+            <!-- JPA 하이버네이트 -->
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <!-- H2 데이터베이스 -->
+
+            <!-- JPA가 실행한 sql 조회 옵션 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- 조회된 SQL 쿼리 포맷팅 옵션 -->
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- JPA가 실행한 sql의 주석 조회 옵션 -->
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <!--            <property name="hibernate.hbm2ddl.auto" value="create"/>-->
+            <!--            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
             <property name="hibernate.hbm2ddl.auto" value="create"/>
             <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
         </properties>

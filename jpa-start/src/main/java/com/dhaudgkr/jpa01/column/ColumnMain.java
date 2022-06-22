@@ -1,6 +1,5 @@
-package com.dhaudgkr.jpastart.column;
+package com.dhaudgkr.jpa01.column;
 
-import com.dhaudgkr.jpastart.hellojpa.entity.Member;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.persistence.EntityManager;
