@@ -1,7 +1,7 @@
-package com.dhaudgkr.jpa03.manytoone;
+package com.dhaudgkr.jpa03.onetomany;
 
-import com.dhaudgkr.jpa03.manytoone.domain.Member;
-import com.dhaudgkr.jpa03.manytoone.domain.Team;
+import com.dhaudgkr.jpa03.onetomany.domain.Member;
+import com.dhaudgkr.jpa03.onetomany.domain.Team;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -11,7 +11,7 @@ import javax.persistence.Persistence;
 public class JpaMain {
 
     public static void main(String[] args) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("hello3");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("hello4");
 
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
@@ -25,14 +25,8 @@ public class JpaMain {
 
             Team team = new Team();
             team.setName("TeamA");
-            team.addMember(member);
+            team.getMembers().add(member);
             entityManager.persist(team);
-
-            entityManager.flush();
-            entityManager.clear();
-
-            Team findTeam = entityManager.find(Team.class, team.getId());
-            System.out.println(findTeam);
 
             entityTransaction.commit();
         } catch (Exception e) {
