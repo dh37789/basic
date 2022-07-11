@@ -11,7 +11,7 @@ import javax.persistence.Persistence;
 public class JpaMain {
 
     public static void main(String[] args) {
-        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("hello");
+        EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("master");
 
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
