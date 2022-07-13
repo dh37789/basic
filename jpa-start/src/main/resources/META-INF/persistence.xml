@@ -157,4 +157,85 @@
             <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
         </properties>
     </persistence-unit>
+    <persistence-unit name="jpa04_1">
+        <!--        <class>com.dhaudgkr.jpa01.hellojpa.entity.Member</class>-->
+        <class>com.dhaudgkr.jpa04.joinstrategy.domain.Item</class>
+        <class>com.dhaudgkr.jpa04.joinstrategy.domain.Movie</class>
+        <class>com.dhaudgkr.jpa04.joinstrategy.domain.Book</class>
+        <class>com.dhaudgkr.jpa04.joinstrategy.domain.Album</class>
+        <properties>
+            <!-- JPA 하이버네이트 -->
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <!-- H2 데이터베이스 -->
+
+            <!-- JPA가 실행한 sql 조회 옵션 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- 조회된 SQL 쿼리 포맷팅 옵션 -->
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- JPA가 실행한 sql의 주석 조회 옵션 -->
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <!--            <property name="hibernate.hbm2ddl.auto" value="create"/>-->
+            <!--            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="jpa04_2">
+        <!--        <class>com.dhaudgkr.jpa01.hellojpa.entity.Member</class>-->
+        <class>com.dhaudgkr.jpa04.singlestrategy.domain.Item</class>
+        <class>com.dhaudgkr.jpa04.singlestrategy.domain.Movie</class>
+        <class>com.dhaudgkr.jpa04.singlestrategy.domain.Book</class>
+        <class>com.dhaudgkr.jpa04.singlestrategy.domain.Album</class>
+        <properties>
+            <!-- JPA 하이버네이트 -->
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <!-- H2 데이터베이스 -->
+
+            <!-- JPA가 실행한 sql 조회 옵션 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- 조회된 SQL 쿼리 포맷팅 옵션 -->
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- JPA가 실행한 sql의 주석 조회 옵션 -->
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <!--            <property name="hibernate.hbm2ddl.auto" value="create"/>-->
+            <!--            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+        </properties>
+    </persistence-unit>
+    <persistence-unit name="jpa04_3">
+        <!--        <class>com.dhaudgkr.jpa01.hellojpa.entity.Member</class>-->
+        <class>com.dhaudgkr.jpa04.alltablestrategy.domain.Item</class>
+        <class>com.dhaudgkr.jpa04.alltablestrategy.domain.Movie</class>
+        <class>com.dhaudgkr.jpa04.alltablestrategy.domain.Book</class>
+        <class>com.dhaudgkr.jpa04.alltablestrategy.domain.Album</class>
+        <properties>
+            <!-- JPA 하이버네이트 -->
+            <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+            <property name="javax.persistence.jdbc.user" value="sa"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+            <!-- H2 데이터베이스 -->
+
+            <!-- JPA가 실행한 sql 조회 옵션 -->
+            <property name="hibernate.show_sql" value="true"/>
+            <!-- 조회된 SQL 쿼리 포맷팅 옵션 -->
+            <property name="hibernate.format_sql" value="true"/>
+            <!-- JPA가 실행한 sql의 주석 조회 옵션 -->
+            <property name="hibernate.use_sql_comments" value="true"/>
+            <!--            <property name="hibernate.hbm2ddl.auto" value="create"/>-->
+            <!--            <property name="hibernate.hbm2ddl.auto" value="create-drop"/>-->
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
+            <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
+        </properties>
+    </persistence-unit>
 </persistence>
