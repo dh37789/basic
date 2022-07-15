@@ -7,6 +7,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -133,8 +134,9 @@ public class JpaMain {
         /* goodcase */
         try {
             Member member = new Member(101L, "Hello JPA");
+            member.setCreatedBy("mho");
+            member.setCreateDate(LocalDateTime.now());
 
-            System.out.println("=== PERSISTENT BEFORE ===");
             entityManager.persist(member);
             /* 영속성 컨텍스트의 member의 영속상태를 준영속 상태로 분리한다.*/
 //            entityManager.detach(member);

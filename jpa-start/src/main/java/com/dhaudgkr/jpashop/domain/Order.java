@@ -11,7 +11,7 @@ import java.util.List;
 @Entity
 @Table(name = "ORDERS") /* ORDER가 예약어라 생성이 안되는 DB가 있어서 ORDERS를 많이 사용 */
 @Getter @Setter
-public class Order {
+public class Order extends BaseEntity{
 
     @Id @GeneratedValue
     @Column(name = "ORDER_ID")

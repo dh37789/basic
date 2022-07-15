@@ -12,7 +12,7 @@ import java.util.List;
 @Entity
 @Getter @Setter
 //@Table(indexes = "") /* index가 있을시 Table에 index도 명시해주는것이 좋다.*/
-public class Member {
+public class Member extends BaseEntity{
 
     @Id @GeneratedValue
     @Column(name = "MEMBER_ID") /* 컬럼명은 소문자/대문자를 회사 컨벤션에 따라서 적으면 된다. */
