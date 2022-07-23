@@ -21,6 +21,7 @@ public class JpaMain {
         try {
             Address address = new Address("city", "street", "zipcode");
 
+
             Member member1 = new Member();
             member1.setHomeAddress(address);
             member1.setUsername("mho1");
@@ -38,6 +39,13 @@ public class JpaMain {
             member1.getHomeAddress().setCity("newCity");
 
             entityTransaction.commit();
+
+            Address addressA = new Address("city", "street", "zipcode");
+            Address addressB = new Address("city", "street", "zipcode");
+
+            System.out.println("addressA == addressB : " + (addressA == addressB));
+            System.out.println("addressA equals addressB : " + (addressA.equals(addressB)));
+
         } catch (Exception e) {
             entityTransaction.rollback();
             e.printStackTrace();
