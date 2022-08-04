@@ -19,10 +19,10 @@ public class Member extends BaseEntity{
     private Long id;
     @Column(length = 10) /* length와 같은 제약조건을 추가하는 것이 직관적인 이점이 있다. */
     private String name;
-    private String city;
-    private String street;
-    private String zipcode;
 
     @OneToMany(mappedBy = "member")
     private List<Order> orders = new ArrayList<>();
+
+    @Embedded
+    private Address address;
 }

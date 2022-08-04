@@ -9,11 +9,11 @@ public class Delivery extends BaseEntity{
     @Column(name = "DELIVERY_ID")
     private Long id;
 
-    private String city;
-    private String street;
-    private String zipcode;
     private DeliveryStatus status;
 
     @OneToOne(mappedBy = "delivery", fetch = FetchType.LAZY)
     private Order order;
+
+    @Embedded
+    private Address address;
 }
