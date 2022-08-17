@@ -18,12 +18,6 @@ public class JpaMain {
         entityTransaction.begin();
 
         try {
-//            for (int i = 0; i < 100; i++) {
-//                Member member = new Member();
-//                member.setUsername("member" + i);
-//                member.setAge(i+5);
-//                entityManager.persist(member);
-//            }
             Team team = new Team();
             team.setName("teamA");
             entityManager.persist(team);
@@ -42,19 +36,6 @@ public class JpaMain {
 //            projections2(entityManager);
 //            paging(entityManager);
 //            join(entityManager);
-
-            /* inner join */
-//            String query = "select m from Member m inner join m.team t";
-            /* left outer join */
-//            String query = "select m from Member m inner join m.team t";
-            /* 세타 조인 */
-//            String query = "select m from Member m, Team t where m.username = t.name";
-            /* 조인 대상 필터링 */
-//            String query = "select m from Member m left outer join m.team t on t.name = 'teamA'";
-            /* 연관관계 없는 엔티티 외부 조인 */
-            String query = "select m from Member m left join Team t on m.username = t.name";
-            List<Member> result = entityManager.createQuery(query, Member.class)
-                    .getResultList();
 
             entityTransaction.commit();
         } catch (Exception e) {
@@ -150,5 +131,20 @@ public class JpaMain {
         for (Member findMember : memberList) {
             System.out.println("findMember.username : " + findMember);
         }
+    }
+
+    private static void join(EntityManager entityManager) {
+        /* inner join */
+        String innerJoin = "select m from Member m inner join m.team t";
+        /* left outer join */
+        String leftOuterJoin = "select m from Member m inner join m.team t";
+        /* 세타 조인 */
+        String thetaJoin = "select m from Member m, Team t where m.username = t.name";
+        /* 조인 대상 필터링 */
+        String on1 = "select m from Member m left outer join m.team t on t.name = 'teamA'";
+        /* 연관관계 없는 엔티티 외부 조인 */
+        String on2 = "select m from Member m left join Team t on m.username = t.name";
+        List<Member> result = entityManager.createQuery(on2, Member.class)
+                .getResultList();
     }
 }
