@@ -13,10 +13,18 @@ public class Team {
 
     @Id @GeneratedValue
     private Long id;
-    private String username;
+    private String name;
     private int age;
 
     @OneToMany(mappedBy = "team")
     private List<Member> members = new ArrayList<>();
 
+    @Override
+    public String toString() {
+        return "Team{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

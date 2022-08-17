@@ -18,12 +18,21 @@ public class JpaMain {
         entityTransaction.begin();
 
         try {
-            for (int i = 0; i < 100; i++) {
-                Member member = new Member();
-                member.setUsername("member" + i);
-                member.setAge(i+5);
-                entityManager.persist(member);
-            }
+//            for (int i = 0; i < 100; i++) {
+//                Member member = new Member();
+//                member.setUsername("member" + i);
+//                member.setAge(i+5);
+//                entityManager.persist(member);
+//            }
+            Team team = new Team();
+            team.setName("teamA");
+            entityManager.persist(team);
+
+            Member member = new Member();
+            member.setUsername("member");
+            member.setAge(10);
+            member.setTeam(team);
+            entityManager.persist(member);
 
             entityManager.flush();
             entityManager.clear();
@@ -32,8 +41,20 @@ public class JpaMain {
 //            projections(entityManager);
 //            projections2(entityManager);
 //            paging(entityManager);
+//            join(entityManager);
 
-
+            /* inner join */
+//            String query = "select m from Member m inner join m.team t";
+            /* left outer join */
+//            String query = "select m from Member m inner join m.team t";
+            /* 세타 조인 */
+//            String query = "select m from Member m, Team t where m.username = t.name";
+            /* 조인 대상 필터링 */
+//            String query = "select m from Member m left outer join m.team t on t.name = 'teamA'";
+            /* 연관관계 없는 엔티티 외부 조인 */
+            String query = "select m from Member m left join Team t on m.username = t.name";
+            List<Member> result = entityManager.createQuery(query, Member.class)
+                    .getResultList();
 
             entityTransaction.commit();
         } catch (Exception e) {
@@ -113,6 +134,13 @@ public class JpaMain {
     }
 
     private static void paging(EntityManager entityManager) {
+        for (int i = 0; i < 100; i++) {
+            Member member = new Member();
+            member.setUsername("member" + i);
+            member.setAge(i+5);
+            entityManager.persist(member);
+        }
+
         List<Member> memberList = entityManager.createQuery("SELECT m FROM Member m ORDER BY m.age DESC", Member.class)
                 .setFirstResult(0)
                 .setMaxResults(10)
