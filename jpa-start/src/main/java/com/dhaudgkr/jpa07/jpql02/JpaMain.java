@@ -1,9 +1,6 @@
 package com.dhaudgkr.jpa07.jpql02;
 
-import com.dhaudgkr.jpa07.jpql02.domain.Address;
-import com.dhaudgkr.jpa07.jpql02.domain.Member;
-import com.dhaudgkr.jpa07.jpql02.domain.MemberDto;
-import com.dhaudgkr.jpa07.jpql02.domain.Team;
+import com.dhaudgkr.jpa07.jpql02.domain.*;
 
 import javax.persistence.*;
 import java.util.List;
@@ -25,6 +22,7 @@ public class JpaMain {
             Member member = new Member();
             member.setUsername("member");
             member.setAge(10);
+            member.setType(MemberType.valueOf("USER"));
             member.setTeam(team);
             entityManager.persist(member);
 
@@ -36,6 +34,24 @@ public class JpaMain {
 //            projections2(entityManager);
 //            paging(entityManager);
 //            join(entityManager);
+//            subQuery(entityManager);
+
+//            String typeQuery = "select m.username, 'HELLO', 10L, TRUE from Member m";
+//            List<Object[]> result = entityManager.createQuery(typeQuery)
+//                    .getResultList();
+//
+//            for (Object[] objects : result) {
+//                System.out.println("member : " + objects[0]);
+//                System.out.println("String : " + objects[1]);
+//                System.out.println("Long : " + objects[2]);
+//                System.out.println("Boolean : " + objects[3]);
+//            }
+
+            String typeQuery = "select m.username from Member m " +
+                    "where m.type = :userType";
+            List<Object[]> result = entityManager.createQuery(typeQuery)
+                    .setParameter("userType", MemberType.USER)
+                    .getResultList();
 
             entityTransaction.commit();
         } catch (Exception e) {
@@ -145,6 +161,12 @@ public class JpaMain {
         /* 연관관계 없는 엔티티 외부 조인 */
         String on2 = "select m from Member m left join Team t on m.username = t.name";
         List<Member> result = entityManager.createQuery(on2, Member.class)
+                .getResultList();
+    }
+
+    private static void subQuery(EntityManager entityManager) {
+        String subQuery = "select (select avg(m1.age) from Member m1) as avgAge from Member";
+        List<Object[]> result = entityManager.createQuery(subQuery)
                 .getResultList();
     }
 }
