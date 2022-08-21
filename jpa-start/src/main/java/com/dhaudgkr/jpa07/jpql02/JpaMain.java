@@ -46,80 +46,6 @@ public class JpaMain {
 //            conditionalQuery(entityManager);
 //            function(entityManager);
 
-//            String query1 = "SELECT 'A' || 'B' FROM Member m";
-//            String query1 = "SELECT CONCAT('A','B') FROM Member m";
-//            List<String> result1 = entityManager.createQuery(query1, String.class)
-//                            .getResultList();
-//
-//            for (String str : result1) {
-//                System.out.println("concat : " + str);
-//            }
-
-//            String query2 = "SELECT SUBSTRING('abcdefg', 2, 3) FROM Member m";
-//            List<String> result2 = entityManager.createQuery(query2, String.class)
-//                            .getResultList();
-//
-//            for (String str : result2) {
-//                System.out.println("substring : " + str);
-//            }
-
-//            String query3 = "SELECT TRIM('   ab  cdefg   ') FROM Member m";
-//            List<String> result3 = entityManager.createQuery(query3, String.class)
-//                    .getResultList();
-//
-//            for (String str : result3) {
-//                System.out.println("trim : " + str);
-//            }
-//
-//            String query4 = "SELECT LOWER('ABCDEFG'), UPPER('abcdefg') FROM Member m";
-//            List<Object[]> result4 = entityManager.createQuery(query3)
-//                    .getResultList();
-//
-//            for (Object[] objects : result4) {
-//                System.out.println("lower : " + objects[0]);
-//                System.out.println("upper : " + objects[1]);
-//            }
-
-//            String query5 = "SELECT LENGTH('abcdefggg') FROM Member m";
-//            List<Integer> result5 = entityManager.createQuery(query5, Integer.class)
-//                    .getResultList();
-//
-//            for (Integer integer : result5) {
-//                System.out.println("length : " + integer);
-//            }
-
-//            String query6 = "SELECT LOCATE('ggg', 'abcdefggg') FROM Member m";
-//            List<Integer> result6 = entityManager.createQuery(query6, Integer.class)
-//                    .getResultList();
-//
-//            for (Integer integer : result6) {
-//                System.out.println("locate : " + integer);
-//            }
-
-//            String query7 = "SELECT SIZE(t.members) FROM Team t";
-//            List<Integer> result7 = entityManager.createQuery(query7, Integer.class)
-//                    .getResultList();
-//
-//            for (Integer integer : result7) {
-//                System.out.println("size : " + integer);
-//            }
-
-//            String query8 = "SELECT INDEX(t.members) FROM Team t";
-//            List<Integer> result8 = entityManager.createQuery(query8, Integer.class)
-//                    .getResultList();
-//
-//            for (Integer integer : result8) {
-//                System.out.println("index : " + integer);
-//            }
-
-            String query9 = "SELECT function('group_concat', m.username) FROM Member m";
-            List<String> result9 = entityManager.createQuery(query9, String.class)
-                            .getResultList();
-
-            for (String str : result9) {
-                System.out.println("function : " + str);
-            }
-
             entityTransaction.commit();
         } catch (Exception e) {
             entityTransaction.rollback();
@@ -313,6 +239,78 @@ public class JpaMain {
     }
 
     public static void function(EntityManager entityManager) {
+//            String query1 = "SELECT 'A' || 'B' FROM Member m";
+//            String query1 = "SELECT CONCAT('A','B') FROM Member m";
+//            List<String> result1 = entityManager.createQuery(query1, String.class)
+//                            .getResultList();
+//
+//            for (String str : result1) {
+//                System.out.println("concat : " + str);
+//            }
 
+//            String query2 = "SELECT SUBSTRING('abcdefg', 2, 3) FROM Member m";
+//            List<String> result2 = entityManager.createQuery(query2, String.class)
+//                            .getResultList();
+//
+//            for (String str : result2) {
+//                System.out.println("substring : " + str);
+//            }
+
+//            String query3 = "SELECT TRIM('   ab  cdefg   ') FROM Member m";
+//            List<String> result3 = entityManager.createQuery(query3, String.class)
+//                    .getResultList();
+//
+//            for (String str : result3) {
+//                System.out.println("trim : " + str);
+//            }
+//
+//            String query4 = "SELECT LOWER('ABCDEFG'), UPPER('abcdefg') FROM Member m";
+//            List<Object[]> result4 = entityManager.createQuery(query3)
+//                    .getResultList();
+//
+//            for (Object[] objects : result4) {
+//                System.out.println("lower : " + objects[0]);
+//                System.out.println("upper : " + objects[1]);
+//            }
+
+//            String query5 = "SELECT LENGTH('abcdefggg') FROM Member m";
+//            List<Integer> result5 = entityManager.createQuery(query5, Integer.class)
+//                    .getResultList();
+//
+//            for (Integer integer : result5) {
+//                System.out.println("length : " + integer);
+//            }
+
+//            String query6 = "SELECT LOCATE('ggg', 'abcdefggg') FROM Member m";
+//            List<Integer> result6 = entityManager.createQuery(query6, Integer.class)
+//                    .getResultList();
+//
+//            for (Integer integer : result6) {
+//                System.out.println("locate : " + integer);
+//            }
+
+//            String query7 = "SELECT SIZE(t.members) FROM Team t";
+//            List<Integer> result7 = entityManager.createQuery(query7, Integer.class)
+//                    .getResultList();
+//
+//            for (Integer integer : result7) {
+//                System.out.println("size : " + integer);
+//            }
+
+//            String query8 = "SELECT INDEX(t.members) FROM Team t";
+//            List<Integer> result8 = entityManager.createQuery(query8, Integer.class)
+//                    .getResultList();
+//
+//            for (Integer integer : result8) {
+//                System.out.println("index : " + integer);
+//            }
+
+        String query9 = "SELECT function('group_concat', m.username) FROM Member m";
+        List<String> result9 = entityManager.createQuery(query9, String.class)
+                .getResultList();
+
+        for (String str : result9) {
+            System.out.println("function : " + str);
+        }
     }
 }
