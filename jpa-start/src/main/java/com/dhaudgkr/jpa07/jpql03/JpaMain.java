@@ -30,17 +30,7 @@ public class JpaMain {
             entityManager.flush();
             entityManager.clear();
 
-//            String query1 = "SELECT m.username FROM Member m";
-//            List<String> result1 = entityManager.createQuery(query1, String.class)
-//                            .getResultList();
-
-//            String query2 = "SELECT m.team FROM Member m";
-//            List<Team> result2 = entityManager.createQuery(query2, Team.class)
-//                    .getResultList();
-
-            String query3 = "SELECT t.members FROM Team t";
-            Collection result3 = entityManager.createQuery(query3, Collection.class)
-                    .getResultList();
+            routeExpression(entityManager);
 
             entityTransaction.commit();
         } catch (Exception e) {
@@ -49,5 +39,19 @@ public class JpaMain {
             entityManager.clear();
         }
         entityManagerFactory.close();
+    }
+
+    public static void routeExpression(EntityManager entityManager) {
+        String query1 = "SELECT m.username FROM Member m";
+        List<String> result1 = entityManager.createQuery(query1, String.class)
+                        .getResultList();
+
+        String query2 = "SELECT m.team FROM Member m";
+        List<Team> result2 = entityManager.createQuery(query2, Team.class)
+                .getResultList();
+
+        String query3 = "SELECT t.members FROM Team t";
+        Collection result3 = entityManager.createQuery(query3, Collection.class)
+                .getResultList();
     }
 }
