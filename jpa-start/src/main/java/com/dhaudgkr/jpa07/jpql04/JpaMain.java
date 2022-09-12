@@ -46,8 +46,9 @@ public class JpaMain {
             member3.setTeam(teamB);
             entityManager.persist(member3);
 
-            entityManager.flush();
-            entityManager.clear();
+            bulkCalculation(entityManager, member1);
+
+
 
 //            fetchJoin(entityManager);
 
@@ -113,6 +114,17 @@ public class JpaMain {
                 System.out.println("-> member : " + member.getUsername() + ", hashcode : " + member.hashCode());
             }
         }
+    }
+
+    private static void bulkCalculation(EntityManager entityManager, Member member) {
+        int resultCount = entityManager.createQuery("update Member m set m.age = 20")
+                .executeUpdate();
+        System.out.println("resultCount : " + resultCount);
+
+        entityManager.clear();
+
+        Member findMember = entityManager.find(Member.class, member.getId());
+        System.out.println("findMember.getAge : " + findMember.getAge());
     }
 
 }
