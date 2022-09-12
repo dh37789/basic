@@ -502,8 +502,8 @@
             <!-- JPA 하이버네이트 -->
             <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
             <property name="javax.persistence.jdbc.user" value="sa"/>
-            <property name="javax.persistence.jdbc.password" value=""/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/test"/>
+            <property name="javax.persistence.jdbc.password" value="aaa"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost/~/jpa"/>
             <property name="hibernate.dialect" value="com.dhaudgkr.jpa07.jpql04.dialect.MyH2Dialect"/>
             <!-- H2 데이터베이스 -->
 

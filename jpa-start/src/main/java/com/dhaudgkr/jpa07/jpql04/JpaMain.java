@@ -49,17 +49,6 @@ public class JpaMain {
             entityManager.flush();
             entityManager.clear();
 
-            String query3 = "SELECT t FROM Team t join t.members";
-            List<Team> teams = entityManager.createQuery(query3, Team.class)
-                    .getResultList();
-
-            for (Team team : teams) {
-                System.out.println("team : " + team.getName() + ", size : " + team.getMembers().size());
-                for (Member member : team.getMembers()) {
-                    System.out.println("-> member : " + member.getUsername() + ", hashcode : " + member.hashCode());
-                }
-            }
-
 //            fetchJoin(entityManager);
 
             entityTransaction.commit();
@@ -101,6 +90,21 @@ public class JpaMain {
     private static void distinct(EntityManager entityManager) {
         String query3 = "SELECT distinct t FROM Team t join fetch t.members";
         List<Team> teams = entityManager.createQuery(query3, Team.class)
+                .getResultList();
+
+        for (Team team : teams) {
+            System.out.println("team : " + team.getName() + ", size : " + team.getMembers().size());
+            for (Member member : team.getMembers()) {
+                System.out.println("-> member : " + member.getUsername() + ", hashcode : " + member.hashCode());
+            }
+        }
+    }
+
+    private static void entityRoad(EntityManager entityManager) {
+        String query3 = "SELECT t FROM Team t join fetch t.members m";
+        List<Team> teams = entityManager.createQuery(query3, Team.class)
+                .setFirstResult(0)
+                .setMaxResults(1)
                 .getResultList();
 
         for (Team team : teams) {
