@@ -48,10 +48,6 @@ public class JpaMain {
 
             bulkCalculation(entityManager, member1);
 
-
-
-//            fetchJoin(entityManager);
-
             entityTransaction.commit();
         } catch (Exception e) {
             entityTransaction.rollback();
