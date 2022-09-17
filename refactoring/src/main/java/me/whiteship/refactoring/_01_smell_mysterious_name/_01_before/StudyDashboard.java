@@ -34,8 +34,8 @@ public class StudyDashboard {
 
     public static void main(String[] args) throws IOException {
         GitHub gitHub = GitHub.connect();
-        GHRepository repository = gitHub.getRepository("whiteship/live-study");
-        GHIssue issue = repository.getIssue(30);
+        GHRepository repository = gitHub.getRepository("dh37789/basic");
+        GHIssue issue = repository.getIssue(1);
 
         StudyDashboard studyDashboard = new StudyDashboard();
         studyDashboard.studyReviews(issue);
