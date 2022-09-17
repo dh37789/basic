@@ -5,13 +5,8 @@ A
 .basic/src/com/algorithm/a_sort/BubbleSort.java,f\2\f28e4100ca25a117d08c86065423b09ceced1eae
 D
 jpa-start/.gitignore,f\3\f3d6af71ee4fa07a391f9e96629709e2485c97d5
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 I
 jpa-start/settings.gradle,3\c\3c6114692b1bcecd32b9e05593cc2f339139adfb
-F
-jpa-start/build.gradle,4\7\47639b9cb47896da801544af1916e62b77070a5a
 A
 jpa-start/gradlew,7\7\77398cd0a075ab794b41c5cd8b92c60cec79a2c8
 ?
@@ -20,8 +15,6 @@ Q
 !design-pattern/design-pattern.iml,a\0\a06e335ac400f5fb391d8aa99f82aa7222a402d4
 b
 2jpa-start/gradle/wrapper/gradle-wrapper.properties,a\e\aea806d141725d5d6a32252b973af571bbcff4f9
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 E
 jpa-start/gradlew.bat,8\c\8cfa8ef44522ce08786333eadb7330ea54872645
 Ž
@@ -30,12 +23,6 @@ E
 Pdesign-pattern/src/com/design/pattern/No03FactoryMethod/product/AnimalRobot.java,a\8\a852ba1887f34059e9373a5dda83e31d091d9639
 …
 Udesign-pattern/src/com/design/pattern/No03FactoryMethod/creator/AnimalRobotStore.java,6\9\69589bcd98b68db304dcf89bc827351b9225c67e
-‘
-adesign-pattern/src/com/design/pattern/No02Builder/concretebuilder/BurgerKingHamburgerBuilder.java,d\e\de783544df150665c7e40a28626a29873b86c210
-u
-Edesign-pattern/src/com/design/pattern/No01AbstractFactory/Client.java,2\7\270c0e94d2a43b8514e3dd617f8f2eba282e762b
-v
-Fdesign-pattern/src/com/design/pattern/No01AbstractFactory/lg/Gram.java,5\d\5dd0140656168f656d0ff9601c161076461cca16
 x
 Hdesign-pattern/src/com/design/pattern/No02Builder/product/Hamburger.java,7\4\74fe8c9c96c86adef380acafc0164846906573c6
 
@@ -44,12 +31,6 @@ Odesign-pattern/src/com/design/pattern/No02Builder/builder/HamburgerBuilder.java
 Ndesign-pattern/src/com/design/pattern/No02Builder/director/HamburgerStore.java,b\3\b36fd015f2685910651bd46a417fc34f4e99c82e
 z
 Jdesign-pattern/src/com/design/pattern/No01AbstractFactory/samsung/Ion.java,5\5\5587082a46035313b4e76a0e6f05e605bcc098b8
-v
-Fjpa-start/src/main/java/com/dhaudgkr/jpastart/JpaStartApplication.java,0\3\038ea18c1974b6b7aa13785e0a72a8cc731c8daf
-{
-Kjpa-start/src/test/java/com/dhaudgkr/jpastart/JpaStartApplicationTests.java,a\0\a02a97e7b4ce260849a28ec5e8115b745d7d4381
-{
-Kdesign-pattern/src/com/design/pattern/No01AbstractFactory/lg/LgFactory.java,4\7\479e1674e4bdf1cbf4de0cbf26e07484e80b79e6
 ~
 Ndesign-pattern/src/com/design/pattern/No01AbstractFactory/lg/LgTelevision.java,6\5\6583d81f44ab5c49500e35069a2081520bb2314a
 d
@@ -58,8 +39,6 @@ d
 ,basic/src/com/effectiveJava/item18/Main.java,1\a\1a348e0e66303725c175ecb257377fc21573714d
 k
 ;design-pattern/src/com/design/pattern/No02Builder/Main.java,4\0\40e1aabddb1438816611774071483e1a8a3723a4
-q
-Adesign-pattern/src/com/design/pattern/No03FactoryMethod/Main.java,c\9\c943ec7cf6566acfc279f6bf843b40b77ecce954
 ’
 bdesign-pattern/src/com/design/pattern/No03FactoryMethod/concretecreator/MetalAnimalRobotStore.java,f\3\f33ec19593e5c3be4afcdd070eac9ae3c7affc62
 Š
@@ -84,7 +63,3 @@ adesign-pattern/src/com/design/pattern/No03FactoryMethod/concretecreator/WoodAni
 Ydesign-pattern/src/com/design/pattern/No03FactoryMethod/concreteproduct/WoodCatRobot.java,b\d\bd8873280d3a93a72bf30d37955087288ba9c7bf
 ‰
 Ydesign-pattern/src/com/design/pattern/No03FactoryMethod/concreteproduct/WoodDogRobot.java,6\f\6f43c5a100459419b6e4073a20d2dba0d6e73138
-y
-Ijpa-start/src/main/java/com/dhaudgkr/jpastart/hellojpa/entity/Member.java,b\7\b72e78e565263914cc577b83c3a5638992c2b971
-s
-Cjpa-start/src/main/java/com/dhaudgkr/jpastart/hellojpa/JpaMain.java,b\f\bfdc7fb26cbf327a6c9b54701c5573db6a289385
