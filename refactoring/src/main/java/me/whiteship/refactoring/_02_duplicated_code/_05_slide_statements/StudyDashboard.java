@@ -13,7 +13,7 @@ public class StudyDashboard {
     private void printParticipants(int eventId) throws IOException {
         // Get github issue to check homework
         GitHub gitHub = GitHub.connect();
-        GHRepository repository = gitHub.getRepository("whiteship/live-study");
+        GHRepository repository = gitHub.getRepository("dh37789/basic");
         GHIssue issue = repository.getIssue(eventId);
 
         // Get participants
@@ -27,8 +27,8 @@ public class StudyDashboard {
     private void printReviewers() throws IOException {
         // Get github issue to check homework
         GitHub gitHub = GitHub.connect();
-        GHRepository repository = gitHub.getRepository("whiteship/live-study");
-        GHIssue issue = repository.getIssue(30);
+        GHRepository repository = gitHub.getRepository("dh37789/basic");
+        GHIssue issue = repository.getIssue(1);
 
         // Get reviewers
         Set<String> reviewers = new HashSet<>();
@@ -41,7 +41,7 @@ public class StudyDashboard {
     public static void main(String[] args) throws IOException {
         StudyDashboard studyDashboard = new StudyDashboard();
         studyDashboard.printReviewers();
-        studyDashboard.printParticipants(15);
+        studyDashboard.printParticipants(1);
     }
 
 
