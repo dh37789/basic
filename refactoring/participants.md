@@ -1,4 +1,4 @@
-| 참여자 (419) | 1주차 | 2주차 | 3주차 | 4주차 | 5주차 | 6주차 | 7주차 | 8주차 | 9주차 | 10주차 | 11주차 | 12주차 | 13주차 | 14주차 | 15주차 | 참석율 |
+| 참여자 (417) | 1주차 | 2주차 | 3주차 | 4주차 | 5주차 | 6주차 | 7주차 | 8주차 | 9주차 | 10주차 | 11주차 | 12주차 | 13주차 | 14주차 | 15주차 | 참석율 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 0417taehyun |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | 1031nice |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | 100.00% |
@@ -25,14 +25,12 @@
 | EdwardJae |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | G-ONL |:x:|:x:|:x:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | GGob2 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 46.00% |
-| GeneratorEOM |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | GetMapping |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x: | 73.00% |
 | Gomding |:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | 93.00% |
 | GunnwooKim |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 26.00% |
 | GyosunShin |:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 13.00% |
 | HYEBPARK |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 46.00% |
 | HanJaehee |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 53.00% |
-| Hongyeongjune |:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 26.00% |
 | HwangWonGyu |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x: | 33.00% |
 | Hwanse |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x: | 80.00% |
 | HyangKeunChoi |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark: | 86.00% |
@@ -122,6 +120,8 @@
 | bong6981 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | boraborason |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 53.00% |
 | bperhaps |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
+| bswsw |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | 100.00% |
+| bywindow |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 26.00% |
 | castleCircle |:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:x:|:x:|:x:|:x: | 53.00% |
 | catsbi |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 26.00% |
 | cattaku |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
@@ -152,7 +152,6 @@
 | devShLee7017 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:x: | 86.00% |
 | devksh930 |:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 40.00% |
 | devvip |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:x: | 80.00% |
-| dionidip |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 26.00% |
 | dip0cean |:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 13.00% |
 | dkyou7 |:x:|:x:|:x:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | dmstjd1024 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:x: | 80.00% |
@@ -163,13 +162,14 @@
 | dudqls5271 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | dwywdo |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | eatnows |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x: | 80.00% |
+| economyjang |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x: | 86.00% |
+| edjzz |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | ehdrhelr |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 53.00% |
 | eichel130 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 46.00% |
 | ejxzhn22 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x: | 60.00% |
 | elon09 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 53.00% |
 | enothfif |:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:white_check_mark: | 6.00% |
 | eogh234 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 40.00% |
-| eomgr55 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 26.00% |
 | epark-grace |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | etff |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | 100.00% |
 | eunbok |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
@@ -181,7 +181,7 @@
 | geneaky |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x: | 86.00% |
 | ggomjae |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | ghYoon93 |:x:|:x:|:x:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
-| ghost |:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 33.00% |
+| ghost |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 40.00% |
 | ghwann |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | gintire |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x: | 66.00% |
 | githubjam2 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x: | 60.00% |
@@ -210,6 +210,7 @@
 | hojunnnnn |:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | 93.00% |
 | hong918kr |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | hongminpark |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x: | 80.00% |
+| hongyeongjune |:white_check_mark:|:white_check_mark:|:x:|:x:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 26.00% |
 | honux77 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | 100.00% |
 | hwonny |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | hyenny |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
@@ -270,7 +271,6 @@
 | kwj1270 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | 100.00% |
 | kys4548 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 33.00% |
 | kyu9 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x: | 93.00% |
-| kyungjaejang |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x: | 86.00% |
 | kyunyan |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | ldw1220 |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | league3236 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 46.00% |
@@ -304,7 +304,7 @@
 | msmn1729 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 33.00% |
 | myBabyGrand |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x: | 80.00% |
 | n00nietzsche |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
-| nakyeonko |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
+| nakyeonko3 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | nekisse-lee |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | nhs0912 |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | nimkoes |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:white_check_mark: | 93.00% |
@@ -348,7 +348,6 @@
 | salmon2 |:x:|:x:|:x:|:x:|:x:|:x:|:white_check_mark:|:x:|:x:|:x:|:white_check_mark:|:x:|:white_check_mark:|:x:|:x: | 20.00% |
 | sangm1n |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | sangw0804 |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
-| sangwoobae |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark: | 100.00% |
 | sejongdeveloper |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x: | 80.00% |
 | sellester |:x:|:x:|:x:|:x:|:x:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:white_check_mark:|:x:|:x: | 13.00% |
 | seovalue |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
@@ -396,7 +395,6 @@
 | wannte |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | wdEffort |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | whiteship |:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:white_check_mark:|:white_check_mark:|:x:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x: | 33.00% |
-| wideo2 |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | wltnthss |:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 20.00% |
 | yallyyally |:white_check_mark:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x:|:x: | 6.00% |
 | yangseungin |:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:white_check_mark:|:x:|:x: | 86.00% |
