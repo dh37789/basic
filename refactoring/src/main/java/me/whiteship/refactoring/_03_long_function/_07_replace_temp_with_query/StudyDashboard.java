@@ -17,21 +17,42 @@ import java.util.concurrent.Executors;
 
 public class StudyDashboard {
 
+    private final int totalNumberOfEvents;
+
+    public StudyDashboard(int totalNumberOfEvents) {
+        this.totalNumberOfEvents = totalNumberOfEvents;
+    }
+
     public static void main(String[] args) throws IOException, InterruptedException {
-        StudyDashboard studyDashboard = new StudyDashboard();
+        StudyDashboard studyDashboard = new StudyDashboard(15);
         studyDashboard.print();
     }
 
     private void print() throws IOException, InterruptedException {
-        GitHub gitHub = GitHub.connect();
-        GHRepository repository = gitHub.getRepository("whiteship/live-study");
+        GHRepository repository = getGhRepository();
+
         List<Participant> participants = new CopyOnWriteArrayList<>();
 
-        int totalNumberOfEvents = 15;
-        ExecutorService service = Executors.newFixedThreadPool(8);
-        CountDownLatch latch = new CountDownLatch(totalNumberOfEvents);
+        setComment(repository, participants);
 
-        for (int index = 1 ; index <= totalNumberOfEvents ; index++) {
+        try (FileWriter fileWriter = new FileWriter("participants.md");
+             PrintWriter writer = new PrintWriter(fileWriter)) {
+            participants.sort(Comparator.comparing(Participant::username));
+
+            writer.print(header(this.totalNumberOfEvents, participants.size()));
+
+            participants.forEach(p -> {
+                String markdownForHomework = getMarkDownForParticipant(new ParticipantPrinter(totalNumberOfEvents, p));
+                writer.print(markdownForHomework);
+            });
+        }
+    }
+
+    private void setComment(GHRepository repository, List<Participant> participants) throws InterruptedException {
+        ExecutorService service = Executors.newFixedThreadPool(8);
+        CountDownLatch latch = new CountDownLatch(this.totalNumberOfEvents);
+
+        for (int index = 1; index <= this.totalNumberOfEvents; index++) {
             int eventId = index;
             service.execute(new Runnable() {
                 @Override
@@ -64,18 +85,12 @@ public class StudyDashboard {
 
         latch.await();
         service.shutdown();
+    }
 
-        try (FileWriter fileWriter = new FileWriter("participants.md");
-             PrintWriter writer = new PrintWriter(fileWriter)) {
-            participants.sort(Comparator.comparing(Participant::username));
-
-            writer.print(header(totalNumberOfEvents, participants.size()));
-
-            participants.forEach(p -> {
-                String markdownForHomework = getMarkDownForParticipant(new ParticipantPrinter(totalNumberOfEvents, p));
-                writer.print(markdownForHomework);
-            });
-        }
+    private GHRepository getGhRepository() throws IOException {
+        GitHub gitHub = GitHub.connect();
+        GHRepository repository = gitHub.getRepository("whiteship/live-study");
+        return repository;
     }
 
     private double getRate(ParticipantPrinter participantPrinter) {
