@@ -12,7 +12,7 @@ class BillingTest {
     void totalOutstanding() {
         Billing billing = new Billing(new Customer("keesun", List.of(new Invoice(20), new Invoice(30))),
                 new EmailGateway());
-        assertEquals(50d, billing.getTotalOutstandingAndSendBill());
+        assertEquals(50d, billing.getTotalOutstanding());
     }
 
 }
