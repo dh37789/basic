@@ -5,15 +5,8 @@ import java.util.List;
 public class Criminal {
 
     public void alertForMiscreant(List<Person> people) {
-        for (Person p : people) {
-            if (p.getName().equals("Don")) {
-                setOffAlarms();
-            }
-
-            if (p.getName().equals("John")) {
-                setOffAlarms();
-            }
-        }
+        if (!findMiscreant(people).isBlank())
+            setOffAlarms();
     }
 
     public String findMiscreant(List<Person> people) {
