@@ -1,4 +1,4 @@
 package me.whiteship.refactoring._06_mutable_data._22_combine_functions_into_transform;
 
-public record ErichReading(Reading reading, double baseCharge, double taxableCharge) {
+public record EnricReading(Reading reading, double baseCharge, double taxableCharge) {
 }
