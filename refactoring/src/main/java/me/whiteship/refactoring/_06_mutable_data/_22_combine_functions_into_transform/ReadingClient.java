@@ -13,16 +13,15 @@ public class ReadingClient {
         return 10;
     }
 
-    protected ErichReading enrichReading(Reading reading) {
-        return new ErichReading(reading, baseCharge(reading), taxableCharge(reading));
+    protected EnricReading enricReading(Reading reading) {
+        return new EnricReading(reading, baseCharge(reading), taxableCharge(reading));
     }
 
     private double taxableCharge(Reading reading) {
-        return  Math.max(0, baseCharge(reading) - taxThreshold(reading.year()));
+        return Math.max(0, baseCharge(reading) - taxThreshold(reading.year()));
     }
 
     private double baseCharge(Reading reading) {
         return baseRate(reading.month(), reading.year()) * reading.quantity();
     }
-
 }
