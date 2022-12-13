@@ -15,7 +15,7 @@ public class Customer {
     }
 
     public void setDiscountRate(double discountRate) {
-        this.contract.setDiscountRate(discountRate + 0.03);
+        this.contract.setDiscountRate(discountRate);
     }
 
     public double getDiscountRate() {
