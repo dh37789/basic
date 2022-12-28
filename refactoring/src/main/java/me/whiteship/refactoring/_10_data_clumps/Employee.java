@@ -4,18 +4,15 @@ public class Employee {
 
     private String name;
 
-    private String personalAreaCode;
+    private TelephoneNumber personalPhoneNumber;
 
-    private String personalNumber;
-
-    public Employee(String name, String personalAreaCode, String personalNumber) {
+    public Employee(String name, TelephoneNumber personalPhoneNumber) {
         this.name = name;
-        this.personalAreaCode = personalAreaCode;
-        this.personalNumber = personalNumber;
+        this.personalPhoneNumber = personalPhoneNumber;
     }
 
     public String personalPhoneNumber() {
-        return personalAreaCode + "-" + personalNumber;
+        return personalPhoneNumber.toString();
     }
 
     public String getName() {
@@ -27,18 +24,18 @@ public class Employee {
     }
 
     public String getPersonalAreaCode() {
-        return personalAreaCode;
+        return this.personalPhoneNumber.getAreaCode();
     }
 
-    public void setPersonalAreaCode(String personalAreaCode) {
-        this.personalAreaCode = personalAreaCode;
+    public void setPersonalAreaCode(String areaCode) {
+        this.personalPhoneNumber.setAreaCode(areaCode);
     }
 
     public String getPersonalNumber() {
-        return personalNumber;
+        return personalPhoneNumber.getNumber();
     }
 
-    public void setPersonalNumber(String personalNumber) {
-        this.personalNumber = personalNumber;
+    public void setPersonalNumber(String number) {
+        this.personalPhoneNumber.setNumber(number);
     }
 }
