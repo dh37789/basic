@@ -37,4 +37,8 @@ public class Customer {
     public void setPaymentHistory(PaymentHistory paymentHistory) {
         this.paymentHistory = paymentHistory;
     }
+
+    boolean isUnknown() {
+        return false;
+    }
 }

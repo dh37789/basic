@@ -13,7 +13,7 @@ class CustomerServiceTest {
     Customer keesun = new Customer("keesun", keesunBillingPlan, new PaymentHistory(1));
 
     @Test
-    void customerName() {
+    void customerName_refactor2() {
         String unknownCustomerName = customerService.customerName(new Site(unknown));
         assertEquals("occupant", unknownCustomerName);
 
@@ -22,14 +22,14 @@ class CustomerServiceTest {
     }
 
     @Test
-    void billingPlan() {
+    void billingPlan_refactor2() {
         assertTrue((customerService.billingPlan(new Site(unknown)) instanceof BasicBillingPlan));
 
         assertEquals(keesunBillingPlan, customerService.billingPlan(new Site(keesun)));
     }
 
     @Test
-    void weeksDelingquent() {
+    void weeksDelingquent_refactor2() {
         assertEquals(1, customerService.weeksDelinquent(new Site(keesun)));
 
         assertEquals(0, customerService.weeksDelinquent(new Site(unknown)));

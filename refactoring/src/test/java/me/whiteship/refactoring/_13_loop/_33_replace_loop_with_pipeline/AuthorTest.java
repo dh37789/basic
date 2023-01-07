@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class AuthorTest {
 
     @Test
-    void twitterHandler() {
+    void twitterHandler_refactor() {
         Author keesun = new Author("ms", null);
         Author whiteship = new Author("naver", "whiteship");
         assertEquals(List.of("whiteship"), Author.TwitterHandles(List.of(keesun, whiteship), "naver"));
