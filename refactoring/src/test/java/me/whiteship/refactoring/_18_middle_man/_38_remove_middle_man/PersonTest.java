@@ -7,10 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 class PersonTest {
 
     @Test
-    void getManager() {
+    void getManager_refactor() {
         Person nick = new Person("nick", null);
         Person keesun = new Person("keesun", new Department(nick));
-        assertEquals(nick, keesun.getManager());
+        assertEquals(nick, keesun.getDepartment().getManager());
     }
 
 }
