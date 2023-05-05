@@ -1,6 +1,7 @@
 package com.effectiveJava.item29;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.EmptyStackException;
 
 public class StackGeneric<E> {
@@ -32,5 +33,15 @@ public class StackGeneric<E> {
     private void ensureCapacity() {
         if (elements.length == size)
             elements = Arrays.copyOf(elements, 2 * size + 1);
+    }
+
+    public void popAll(Collection<? super E> list) {
+        while (!isEmpty())
+            list.add((E) pop());
+    }
+
+    public void pushAll(Iterable<? extends E> iter) {
+        for (E e : iter)
+            push(e);
     }
 }

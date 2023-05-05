@@ -6,7 +6,7 @@ public class ItemExample {
 
     public static void main(String[] args) {
         Collection<?> members = new ArrayList<>();
-//        members.add(new Member(1L, "mho1"));
+//        members.add(new Node(1L, "mho1"));
 //        members.add(1);
 //        members.add("mho");
         members.add(null);
@@ -37,7 +37,7 @@ public class ItemExample {
 
     public void example1() {
         Collection<?> members = new ArrayList<>();
-//        members.add(new Member(1L, "mho1"));
+//        members.add(new Node(1L, "mho1"));
 //        members.add(1);
 //        members.add("mho");
         members.add(null);
