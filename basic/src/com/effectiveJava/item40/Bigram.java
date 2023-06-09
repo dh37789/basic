@@ -1,9 +1,8 @@
 package com.effectiveJava.item40;
 
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.nio.file.Files;
+import java.util.*;
 
 public class Bigram implements Serializable {
     private final char first;
@@ -27,10 +26,8 @@ public class Bigram implements Serializable {
     }
 
     public static void main(String[] args) {
-        Set<Bigram> s = new HashSet<>();
-        for (int i = 0; i < 10; i++)
-            for (char ch = 'a'; ch <= 'z'; ch++)
-                s.add(new Bigram(ch, ch));
-        System.out.println(s.size());
+        Scanner sc = new Scanner(System.in);
+
+        Files.readString();
     }
 }
