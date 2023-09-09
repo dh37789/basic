@@ -34,4 +34,7 @@
       </library>
     </orderEntry>
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="86797295-eebc-45a5-b306-97a10940dce5" />
+  </component>
 </module>
