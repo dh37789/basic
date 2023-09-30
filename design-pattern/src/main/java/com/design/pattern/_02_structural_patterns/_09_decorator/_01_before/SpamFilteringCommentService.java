@@ -11,6 +11,6 @@ public class SpamFilteringCommentService extends CommentService {
     }
 
     private boolean isSpam(String comment) {
-        return comment.contains("http");
+        return comment.contains("바보") || comment.contains("멍청이");
     }
 }

@@ -8,7 +8,7 @@ public class TrimmingCommentService extends CommentService {
     }
 
     private String trim(String comment) {
-        return comment.replace("...", "");
+        return comment.replace("@", "");
     }
 
 }
