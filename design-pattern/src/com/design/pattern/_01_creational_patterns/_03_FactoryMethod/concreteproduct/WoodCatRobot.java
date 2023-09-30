@@ -9,7 +9,7 @@ import com.design.pattern._01_creational_patterns._03_FactoryMethod.product.Anim
 public class WoodCatRobot extends AnimalRobot {
 
     public WoodCatRobot() {
-        type = "Wood Cat Robot";
+        type = "Wood Cat Toy";
         texture = "wood";
         cry = "mew";
     }
